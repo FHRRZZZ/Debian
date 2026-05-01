@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Miqdad | Cloud Computing Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-900 overflow-x-hidden">
+
+
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-full px-6 py-3 shadow-lg shadow-blue-500/5">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">M</div>
+                <span class="font-bold tracking-tight text-slate-800">MIQDAD</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
+                <a href="#" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition-colors">Apa itu Cloud?</a>
+                <a href="#services" class="hover:text-blue-600 transition-colors">Materi</a>
+                <a href="#article" class="hover:text-blue-600 transition-colors">Laporan</a>
+            </div>
+            <a href="#article" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition-all shadow-md shadow-blue-600/20 active:scale-95">Lihat Laporan</a>
+        </div>
+    </nav>
+
+
+    <header class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="absolute top-0 right-0 -z-10 w-1/2 h-1/2 bg-blue-100/50 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-0 left-0 -z-10 w-1/3 h-1/3 bg-indigo-100/50 blur-[100px] rounded-full"></div>
+
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="space-y-8">
+                <div class="flex flex-col items-center">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-wider mb-4 border border-blue-100 uppercase">Tugas Labkom 2026</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] text-slate-900 mb-6">
+                        Menjelajah <br> <span class="text-blue-600">Cloud Computing</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                        Halo! Saya <strong>Miqdad Fairruz Haq</strong>. Website ini adalah wadah eksplorasi saya mengenai teknologi awan yang mengubah dunia.
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#about" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/10 flex items-center gap-2 group">
+                        Mulai Belajar
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                    <a href="#article" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition-all shadow-sm">
+                        Lihat Laporan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto px-6 py-24 space-y-32">
+        
+        <section id="about" class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <div class="absolute inset-0 bg-blue-600 rounded-3xl rotate-3 scale-95 opacity-10 group-hover:rotate-6 transition-transform"></div>
+                <div class="bg-white p-10 rounded-3xl border border-slate-100 shadow-xl relative z-10">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">Apa itu Cloud Computing?</h2>
+                    <p class="text-slate-600 leading-relaxed text-justify">
+                        Cloud Computing atau Komputasi Awan adalah revolusi digital yang memungkinkan kita mengakses sumber daya IT—seperti server, penyimpanan, dan aplikasi—melalui internet dengan model <em>pay-as-you-go</em>. Tanpa perlu memiliki infrastruktur fisik yang mahal, siapa saja bisa berinovasi dengan cepat.
+                    </p>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <div class="flex gap-4 items-start">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex-shrink-0 flex items-center justify-center text-blue-600 font-bold">01</div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Skalabilitas Tinggi</h4>
+                        <p class="text-slate-500 text-sm">Menambah atau mengurangi sumber daya sesuai kebutuhan dalam hitungan menit.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-xl flex-shrink-0 flex items-center justify-center text-indigo-600 font-bold">02</div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Efisiensi Biaya</h4>
+                        <p class="text-slate-500 text-sm">Hanya membayar apa yang Anda gunakan tanpa biaya pemeliharaan hardware fisik.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="w-12 h-12 bg-purple-50 rounded-xl flex-shrink-0 flex items-center justify-center text-purple-600 font-bold">03</div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Akses Global</h4>
+                        <p class="text-slate-500 text-sm">Akses data dan aplikasi Anda dari mana saja di seluruh dunia selama ada internet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Materi Perkuliahan</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-[32px] border border-slate-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform font-bold text-xl">
+                        01
+                    </div>
+                    <h3 class="text-2xl font-extrabold mb-4">Pertemuan 1</h3>
+                    <p class="text-sm font-medium text-slate-400 mb-4 uppercase tracking-tighter">Dasar & Instalasi</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Langkah awal mempelajari Virtualization dengan melakukan instalasi VirtualBox dan setup sistem operasi Debian Server.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-[10px] font-bold rounded-md">VirtualBox</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-[10px] font-bold rounded-md">Debian 12</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-[32px] shadow-2xl hover:shadow-blue-500/20 transition-all hover:-translate-y-2 group text-white">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform font-bold text-xl">
+                        02
+                    </div>
+                    <h3 class="text-2xl font-extrabold mb-4">Pertemuan 2</h3>
+                    <p class="text-sm font-medium text-blue-400 mb-4 uppercase tracking-tighter">Konfigurasi Jaringan</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Mengatur Network Interface pada Debian, konfigurasi IP Static, serta memastikan konektivitas antar node dalam jaringan virtual.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-white/10 text-white/60 text-[10px] font-bold rounded-md">Networking</span>
+                        <span class="px-3 py-1 bg-white/10 text-white/60 text-[10px] font-bold rounded-md">Static IP</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-[32px] border border-slate-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform font-bold text-xl">
+                        03
+                    </div>
+                    <h3 class="text-2xl font-extrabold mb-4">Pertemuan 3</h3>
+                    <p class="text-sm font-medium text-slate-400 mb-4 uppercase tracking-tighter">Layanan Web Server</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Membangun infrastruktur web server sederhana menggunakan Apache/Nginx di dalam Debian untuk melayani permintaan HTTP.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-[10px] font-bold rounded-md">Web Server</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-[10px] font-bold rounded-md">Apache</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="article" class="max-w-4xl mx-auto">
+            <div class="bg-white p-8 md:p-16 rounded-[40px] shadow-2xl border border-slate-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-[100px] -z-10"></div>
+                
+                <article class="prose prose-slate lg:prose-lg mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+                            Detail Materi <br> Praktikum Labkom
+                        </h2>
+                        <div class="flex items-center justify-center gap-4 text-slate-400 text-sm font-medium uppercase tracking-widest">
+                            <span>Laporan</span>
+                            <span class="w-1.5 h-1.5 bg-blue-600 rounded-full"></span>
+                            <span>Proses</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-20 text-slate-600 leading-relaxed">
+                        
+                        <!-- Pertemuan 1 Detail -->
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <span class="bg-blue-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold">1</span>
+                                <h3 class="text-2xl font-bold text-slate-900">Pertemuan 1: Instalasi VirtualBox & Debian</h3>
+                            </div>
+                            <p class="text-justify">
+                                Pada pertemuan pertama, fokus utama adalah mempersiapkan lingkungan virtualisasi. Kami menggunakan <strong>Oracle VM VirtualBox</strong> sebagai platform hypervisor. Setelah itu, dilakukan instalasi <strong>Debian 12 Server</strong>. Proses ini meliputi pengaturan partisi harddisk virtual, konfigurasi hostname, serta pengaturan user root dan password untuk keamanan sistem operasi.
+                            </p>
+                            <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-600">
+                                <ul class="space-y-2 text-sm font-medium">
+                                    <li>• Download & Install VirtualBox terbaru.</li>
+                                    <li>• Membuat VM baru dengan RAM minimal 1GB.</li>
+                                    <li>• Instalasi OS Debian (Text-mode/CLI).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Pertemuan 2 Detail -->
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <span class="bg-blue-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold">2</span>
+                                <h3 class="text-2xl font-bold text-slate-900">Pertemuan 2: Konfigurasi IP Address Static</h3>
+                            </div>
+                            <p class="text-justify">
+                                Pertemuan kedua membahas tentang networking dasar di Linux Server. Kami mempelajari cara mengubah konfigurasi jaringan dari DHCP (otomatis) menjadi <strong>Static IP</strong>. Hal ini penting agar server memiliki alamat tetap yang tidak berubah-ubah. Konfigurasi dilakukan pada file <code>/etc/network/interfaces</code> dengan menentukan address, netmask, dan gateway secara manual.
+                            </p>
+                            <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-600 font-mono text-xs">
+                                <p class="text-blue-700 font-bold mb-2"># Contoh Konfigurasi:</p>
+                                auto enp0s3<br>
+                                iface enp0s3 inet static<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;address 192.168.10.1<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;netmask 255.255.255.0
+                            </div>
+                        </div>
+
+                        <!-- Pertemuan 3 Detail -->
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <span class="bg-blue-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold">3</span>
+                                <h3 class="text-2xl font-bold text-slate-900">Pertemuan 3: Membangun Web Server</h3>
+                            </div>
+                            <p class="text-justify">
+                                Pada tahap ini, kami mengimplementasikan layanan web server menggunakan <strong>Apache2</strong>. Proses dimulai dengan mengupdate repositori dan menginstal paket apache2 via apt-get. Setelah terinstal, kami mencoba memodifikasi file <code>index.html</code> di direktori <code>/var/www/html/</code> untuk menyesuaikan tampilan web server sesuai kebutuhan praktikum.
+                            </p>
+                            <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-lg">
+                                <p class="font-bold mb-2 tracking-tight uppercase text-xs opacity-80">Command Utama:</p>
+                                <code class="text-lg">apt install apache2 -y</code>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white border-t border-slate-100 py-12 px-6 text-center">
+        <div class="max-w-6xl mx-auto flex flex-col items-center gap-8">
+            <div>
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <div class="w-6 h-6 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-sm">M</div>
+                    <span class="font-bold tracking-tight text-slate-800">MIQDAD</span>
+                </div>
+                <p class="text-slate-400 text-sm">&copy; 2026 Miqdad Fairruz Haq. <br> Built for Labkom Assignment.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
